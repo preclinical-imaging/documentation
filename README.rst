@@ -1,9 +1,13 @@
-Template for the Read the Docs tutorial
+Preclinical Imaging XNAT-Enabled Informatics: PIXI
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+**PIXI** is an `XNAT <XNAT_>`_ plugin designed to support imaging informatics for preclinical experiments.
+These pages describe PIXI installation, administration and user functions while leveraging existing XNAT documentation.
+Please use the following index to find the appropriate documentation for your needs:
 
-Read the tutorial here:
+- Getting Started (Deploying XNAT, PIXI and other plugins)
+- Administration
+- User Documentation
 
-https://docs.readthedocs.io/en/stable/tutorial/
+
+.. _XNAT: https://www.xnat.org
