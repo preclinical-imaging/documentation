@@ -1,10 +1,25 @@
 Usage
 =====
 
-.. _installation:
-
-Installation
+Using XNAT
 ------------
+
+Small Animal Subject Model
+--------------------------
+
+Experiments for Small Animal Imaging
+------------------------------------
+
+
+Hotel Splitter
+--------------
+
+Searches
+--------
+
+
+
+
 
 To use Lumache, first install it using pip:
 
