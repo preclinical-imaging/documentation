@@ -16,7 +16,8 @@ Please see instructions below for various configuration settings.
 Site Plugin Settings
 --------------------------
 
-**Subject Settings
+**Subject Settings**
+
 Subject settings include:
 
 - Subject Display Preferences
@@ -28,7 +29,7 @@ Select Subject settings under PIXI in the Plugin Setting column of the display.
 .. image:: ./pixi_subject_settings.png
  :align: center
 
-*Subject Display*
+*Subject Display:*
 XNAT was originally designed to collect data for human subjects.
 The PIXI plugin adds a data type for Animal Demographic Data,
 and you will want to select a default type of demographic data for your installation.
@@ -40,21 +41,20 @@ in some projects and human subjects in others.
 The second preference for Subject Display controls the display for human search fields for PIXI installations.
 The is disabled by default, but can be enabled with this control.
 
-*Species*
-
+*Species:*
 Data entry forms includes animal species information.
 The PIXI plugin supports an ontology of defined terms for species that will appear in menu items for user selection.
 The administrator can create, update and delete terms through this setting.
 Users will be able to user other terms for species when entering data, but these terms are not automatically added to the ontology.
 
-*Animal Vendors / Suppliers *
-
+*Animal Vendors / Suppliers:*
 This is similar to the preference for species.
 The administrator can enter a known list of suppliers in this preference setting.
 XNAT will provide these as menu items at the point of data entry to support consistent terminology.
 As with species, a user will be able to enter a different value, but that value will not be automatically added to this list.
 
 **PDX and Cell Line Preferences**
+
 Patient-Derived Xenograft (PDX) information is maintained by PIXI as a site-wide resource.
 That allows the PDX information to be entered once and reused/referenced in a single project and across multiple projects.
 You can manage the set of PDXs as an administrator.
