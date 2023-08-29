@@ -9,7 +9,7 @@ Contents
 
 .. toctree::
 
-   Getting Started
-   Usage
-   Administration
+   getting_started
+   usage
+   administration
    api
