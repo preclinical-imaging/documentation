@@ -24,7 +24,7 @@ The broad categories provide suggestions about the intended about the owner and 
 When you select an installation procedure and work through the steps, please remember it will be useful to have the plugin jar files before you start.
 
 +---------------------------------------------+-----------------+----------------------------------------+
-| Broad Category                              | Comments        | Installation Instructions              |                                                                                              |
+| Broad Category                              | Comments        | Installation Instructions              |
 +=============================================+=================+========================================+
 | Student / Personal Data Management          | Docker Desktop  | `XNAT In a Dockerized Container`_      |
 +---------------------------------------------+-----------------+----------------------------------------+
