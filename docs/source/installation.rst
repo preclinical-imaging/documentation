@@ -1,4 +1,4 @@
-Getting Started: The PIXI Plugin and Related Plugins, XNAT Deployment
+Installation: The PIXI Plugin and Related Plugins, XNAT Deployment
 =======================================
 
 ---------------
