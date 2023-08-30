@@ -34,7 +34,7 @@ PIXI and core XNAT support three mechanisms for creating research subjects in th
 - XNAT accepts DICOM files and creates subjects per data in the DICOM files (assuming subjects do not already exist)
 - External software can invoke the XNAT REST API to create a subject.
 
-We will focus on the first method on this page.
+We will discuss the first method on this page.
 Select New -> Subjects from the main menu.
 
 .. image:: ./pixi_create_subjects.png
@@ -66,6 +66,38 @@ This same page will allow you to update multiple subjects in batch mode. See the
 Experiments for Small Animal Imaging
 ------------------------------------
 
+XNAT and PIXI support a wide range of *experiments* that are in the data model just below subject.
+`The XNAT wiki defines an experiment as follows`_:
+
+   An experiment is an event by which data is acquired.
+   This data can be imaging data, or non-imaging data.
+   Similar to subject, an experiment cannot exist outside the context of a project.
+   It is owned by the project which first added it.
+   It can additionally be shared into other projects.
+::
+
+
+Imaging sessions like CT, MR and PET are XNAT *experiments* and are strongly typed items that are managed in the XNAT database.
+PIXI adds *experiment* types to XNAT and manages those as first class items in the XNAT database.
+The table belows lists the experiment types that are added by the PIXI plugin.
+
+
++---------------------------+----------------------------------------+
+|  Type                     | Comments                               |
++===========================+========================================+
+| Caliper Measurements      | For measuring lesions                  |
++---------------------------+----------------------------------------+
+| Drug Therapy              | Drug interventions and not PET tracers |
++---------------------------+----------------------------------------+
+| Weight                    | A point in time measurement            |
++---------------------------+----------------------------------------+
+| Cell Line                 |                                        |
++---------------------------+----------------------------------------+
+| Patient Derived Xenograft | PDX                                    |
++---------------------------+----------------------------------------+
+| Animal Husbandry          | Feeding, Fluids and Housing            |
++---------------------------+----------------------------------------+
+
 
 Hotel Splitter
 --------------
@@ -79,3 +111,4 @@ Searches
 .. _XNAT platform: https://www.xnat.org
 .. _How To Use XNAT: https://wiki.xnat.org/documentation/how-to-use-xnat
 .. _pixi_data_model:
+.. _The XNAT wiki defines an experiment as follows: https://wiki.xnat.org/documentation/how-to-use-xnat/understanding-the-xnat-data-model
