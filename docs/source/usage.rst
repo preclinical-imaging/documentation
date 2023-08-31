@@ -105,6 +105,26 @@ The models for these data types are found in `PIXI Data Model <pixi_data_model.h
 Hotel Splitter
 --------------
 
+The PIXI platform supports the standard practice of scanning multiple small animals at one time using a hotel apparatus.
+We anticipate that scanner vendors have yet to implement the parts of the DICOM Standard that support hotel scans,
+and PIXI includes software to split the composite images into separate images that are then linked to an
+individual subject.
+The workflow is mostly managed through the XNAT web user interface, but there is one step to be completed at
+the scanner or if the images are submitted to XNAT using the compressed uploader or XNAT Desktop Client.
+
+#. Assign distinct labels to the individual subjects to distinguish them. This can be done before or after the imaging session.
+#. Use the fixed string "Hotel" as the subject label when uploading DICOM images to XNAT.
+ - The string "Hotel" can be entered at the scanner console in the field that maps to *XXXX*
+ - The string "Hotel" can be added to the images at a later time before the images are uploaded using the XNAT compressed uploader.
+ - The string "Hotel" can be entered as the Subject ID value when the images are uploaded using the XNAT Desktop Client
+
+
+
+
+
+
+
+
 Searches
 --------
 
