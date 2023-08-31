@@ -71,7 +71,7 @@ Experiments for Small Animal Imaging
 ------------------------------------
 
 XNAT and PIXI support a wide range of *experiments* that are in the data model just below subject.
-`The XNAT wiki describes an experiment as follows`_:
+`The XNAT wiki describes an experiment as follows <https://wiki.xnat.org/documentation/how-to-use-xnat/understanding-the-xnat-data-model>`_:
 
    An experiment is an event by which data is acquired.
    This data can be imaging data, or non-imaging data.
@@ -86,22 +86,21 @@ PIXI adds *experiment* types to XNAT and manages those as first class items in t
 The table belows lists the experiment types that are added by the PIXI plugin.
 The models for these data types are found in `PIXI Data Model <pixi_data_model.html>`_
 
-+---------------------------+----------------------------------------+
-|  Type                     | Comments                               |
-+===========================+========================================+
-| Caliper Measurements      | For measuring lesions                  |
-+---------------------------+----------------------------------------+
-| Drug Therapy              | Drug interventions and not PET tracers |
-+---------------------------+----------------------------------------+
-| Weight                    | A point in time measurement            |
-+---------------------------+----------------------------------------+
-| Cell Line                 |                                        |
-+---------------------------+----------------------------------------+
-| Patient Derived Xenograft | PDX                                    |
-+---------------------------+----------------------------------------+
-| Animal Husbandry          | Feeding, Fluids and Housing            |
-+---------------------------+----------------------------------------+
-
++---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+|  Type                     | Comments                                                                                                                                           |
++===========================+====================================================================================================================================================+
+| Caliper Measurements      | An event in which a subject's tumor volume is measured manually using a caliper measurement tool.                                                  |
++---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Drug Therapy              | An event in which a subject is administered a drug or medication.                                                                                  |
++---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Weight                    | An event in which a subject's weight is obtained outside the context of an imaging experiment.                                                     |
++---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Cell Line                 | An event in which a cell line is injected into a small animal subject to create an animal model that can be used for preclinical research.         |
++---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Patient Derived Xenograft | An event in which human tumor tissue is engrafted into a small animal subject to create an animal model that can be used for preclinical research. |
++---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Animal Husbandry          | Record animal feeding and housing information over an interval during which conditions are relatively homogeneous.                                 |
++---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Hotel Splitter
 --------------
@@ -115,4 +114,4 @@ Searches
 .. _XNAT platform: https://www.xnat.org
 .. _How To Use XNAT: https://wiki.xnat.org/documentation/how-to-use-xnat
 .. _pixi_data_model:
-.. _The XNAT wiki defines an experiment as follows: https://wiki.xnat.org/documentation/how-to-use-xnat/understanding-the-xnat-data-model
+
