@@ -13,13 +13,13 @@ Batch Data Entry
 
 Core XNAT provides forms that allow the user to enter data for various items managed by XNAT and the PIXI plugin.
 PIXI adds a new capability where many of the data types managed by PIXI can be created or modified using a spreadsheet model and web user interface.
-Core XNAT would normally provide a form that operates on one item (e.g., subject) at a time.
+Core XNAT normally provides a form that operates on one item (e.g., subject) at a time.
 Because many experiments in small animal imaging involve multiple subjects imaged or otherwise processed at the same time,
 the PIXI plugin will allow the user to enter data in batch mode in a spreadsheet.
-This will simplify any data entry process and reduce errors.
 
 As with core XNAT, the PIXI system will extract metadata from DICOM files and store those directly in the XNAT database.
 Mentioning data entry does not imply that users will re-enter acquisition and other metadata found in a DICOM image.
+PIXI maintains the automated data extract from DICOM images into the XNAT database.
 
 
 Small Animal Subject Model
@@ -41,16 +41,20 @@ Select New -> Subjects from the main menu.
  :align: center
 
 You can then select "Create a Single Subject" for the traditional web form or "Create Multiple Subjects" for batch entry.
-Please select "Create Multiple Subjects". That selection will bring you to this screen:
+Select "Create Multiple Subjects" to direct PIXI to the Subject Data Manager page.
 
 .. image:: ./pixi_subject_data_manager.png
  :align: center
 
 In this context, you can batch enter multiple research subjects using a spreadsheet model.
-Please select where the subject information will be stored.
-The software defaults to a spreadsheet with 5 rows, but you can increase the number of rows.
-You will likely find it convenient to fill in one row and then copy/paste the similar data into the following rows.
-*Note: You cannot copy/paste into the Subject ID row as that column needs unique values.*
+
+- Select the project where the subject information will be stored.
+- The software defaults to a spreadsheet with 5 rows, but you can increase the number of rows.
+
+You will likely find it convenient to fill in one row and then copy/paste common data into the following rows.
+
+*Note: You cannot copy/paste into the Subject ID row as that column requires unique values.
+Copy and paste into the other cells, but enter the Subject ID information separately.*
 
 This same page will allow you to update multiple subjects in batch mode. See the screen capture below.
 
@@ -67,7 +71,7 @@ Experiments for Small Animal Imaging
 ------------------------------------
 
 XNAT and PIXI support a wide range of *experiments* that are in the data model just below subject.
-`The XNAT wiki defines an experiment as follows`_:
+`The XNAT wiki describes an experiment as follows`_:
 
    An experiment is an event by which data is acquired.
    This data can be imaging data, or non-imaging data.
@@ -80,7 +84,7 @@ XNAT and PIXI support a wide range of *experiments* that are in the data model j
 Imaging sessions like CT, MR and PET are XNAT *experiments* and are strongly typed items that are managed in the XNAT database.
 PIXI adds *experiment* types to XNAT and manages those as first class items in the XNAT database.
 The table belows lists the experiment types that are added by the PIXI plugin.
-
+The models for these data types are found in `PIXI Data Model <pixi_data_model.html>`_
 
 +---------------------------+----------------------------------------+
 |  Type                     | Comments                               |
